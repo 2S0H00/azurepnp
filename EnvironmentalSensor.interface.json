@@ -34,7 +34,7 @@
                       "schema": "string"
                   }
               ]
-          }
+          },
           "writable": true
       },
       {
