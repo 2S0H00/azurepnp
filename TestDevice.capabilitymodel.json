@@ -1,0 +1,10 @@
+{
+  "@id": "http://wistron.com/TestDevice/1.0.2",
+  "@type": "CapabilityModel",
+  "displayName": "TestDevice",
+  "implements": [
+    "http://wistron.com/interfaces/DeviceInformation/1.0.0",
+    "http://wistron.com/interfaces/EnvironmentalSensor/1.0.1"
+  ],
+  "@context": "http://azureiot.com/v0/contexts/CapabilityModel.json"
+}
