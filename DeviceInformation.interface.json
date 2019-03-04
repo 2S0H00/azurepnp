@@ -82,12 +82,6 @@
           "displayName": "Total storage",
           "schema": "double",
           "displayUnit": "MB"
-      },
-      {
-        "@type": "Property",
-        "name": "gpuType",
-        "displayName": "Graphics processor (GPU) type",
-        "schema": "string"
       }
   ],
   "@context": "http://azureiot.com/v0/contexts/Interface.json"
