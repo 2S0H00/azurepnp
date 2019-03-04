@@ -25,6 +25,7 @@
           "@type": "Property",
           "description": "This command will begin the GPS for given time interval.",
           "name": "frequency",
+          "schema": "integer",
           "writable": true
       },
       {
