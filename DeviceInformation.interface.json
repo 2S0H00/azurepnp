@@ -1,0 +1,94 @@
+{
+  "@id": "http://wistron.com/interfaces/DeviceInformation/1.0.0",
+  "@type": "Interface",
+  "displayName": "Device Information",
+  "contents": [
+      {
+          "@type": "Property",
+          "name": "fwVersion",
+          "displayName": "Firmware version",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "hwVersion",
+          "displayName": "Hardware version",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "manufacturer",
+          "displayName": "Manufacturer",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "model",
+          "displayName": "Model",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "name",
+          "displayName": "Name",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "oem",
+          "displayName": "Original equipment manufacturer",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "osEdition",
+          "displayName": "Operating system edition",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "osVersion",
+          "displayName": "Operating system version",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "processorArchitecture",
+          "displayName": "Processor architecture",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "processorType",
+          "displayName": "Processor type",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "serialNumber",
+          "displayName": "Serial number",
+          "schema": "string"
+      },
+      {
+          "@type": "Property",
+          "name": "totalMemory",
+          "displayName": "Total memory",
+          "schema": "double",
+          "displayUnit": "MB"
+      },
+      {
+          "@type": "Property",
+          "name": "totalStorage",
+          "displayName": "Total storage",
+          "schema": "double",
+          "displayUnit": "MB"
+      },
+      {
+        "@type": "Property",
+        "name": "gpuType",
+        "displayName": "Graphics processor (GPU) type",
+        "schema": "string"
+      }
+  ],
+  "@context": "http://azureiot.com/v0/contexts/Interface.json"
+}
