@@ -1,0 +1,90 @@
+{
+  "@id": "http://wistron.com/interfaces/EnvironmentalSensor/1.0.1",
+  "@type": "Interface",
+  "displayName": "GPS Sensor",
+  "description": "Provides telemetry, commands and read-write properties",
+  "comment": "Requires GPS sensors.",
+  "contents": [
+      {
+          "@type": "Property",
+          "displayName": "Device State",
+          "description": "The state of the device. Two states online/offline are available.",
+          "name": "state",
+          "schema": {
+              "@type": "Enum",
+              "enumValues": [
+                  {
+                      "displayName": "Offline",
+                      "name": "offline",
+                      "enumValue": "offline"
+                  },
+                  {
+                      "displayName": "Online",
+                      "name": "online",
+                      "enumValue": "online"
+                  }
+              ]
+          }
+      },
+      {
+          "@type": "Property",
+          "displayName": "Customer Name",
+          "description": "The name of the customer currently operating the device.",
+          "name": "name",
+          "schema": "string",
+          "writable": true
+      },
+      {
+          "@type": "Telemetry",
+          "displayName": "GPS",
+          "description": "Current location on the device",
+          "name": "location",
+          "schema": "string",
+          "displayUnit": "Latitude and longitude"
+      },
+      {
+          "@type": "Command",
+          "description": "This command will begin the GPS for given time interval.",
+          "name": "blink",
+          "requestSchema": "long",
+          "responseSchema": {
+              "@type": "Object",
+              "fields": [
+                  {
+                      "name": "description",
+                      "schema": "string"
+                  }
+              ]
+          }
+      },
+      {
+          "@type": "Command",
+          "name": "TurnOnGPS",
+          "comment": "This Commands will turn-on the GPS on the device.",
+          "responseSchema": {
+              "@type": "Object",
+              "fields": [
+                  {
+                      "name": "description",
+                      "schema": "string"
+                  }
+              ]
+          }
+      },
+      {
+          "@type": "Command",
+          "name": "TurnOffGPS",
+          "comment": "This Commands will turn-off the GPS on the device.",
+          "responseSchema": {
+              "@type": "Object",
+              "fields": [
+                  {
+                      "name": "description",
+                      "schema": "string"
+                  }
+              ]
+          }
+      }
+  ],
+  "@context": "http://azureiot.com/v0/contexts/Interface.json"
+}
